@@ -151,17 +151,7 @@ class _Register_screenState extends State<Register_screen> {
                     ),
                   ),
                   onPressed: () {
-                    // if (_formKey.currentState!.validate()) {
-                    //   for (var userpass in UsersInfo.users) {
-                    //     if (userpass.password == _passcontroller.text) {
-                    Navigator.pushReplacementNamed(context, '/home');
-                    // arguments: userpass.number);
-                    //       }
-                    //     }
-                    //     MyMessenger.showMyMessenger(
-                    //         "Username yoki password Error!", context);
-                    //   }
-                    // },
+                    Navigator.pushReplacementNamed(context, '/login');
                   },
                 ),
                 szBox(
@@ -171,9 +161,13 @@ class _Register_screenState extends State<Register_screen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Already have account? Login here ",
+                      "Already have account?",
                       style: TextStyle(color: Colorss.grey),
                     ),
+                    TextButton(onPressed: (){
+                      Navigator.pushReplacementNamed(context, '/login',
+                            arguments: _passcontroller.text);
+                    }, child: Text("Login here")),
                     
                   ],
                 ),
