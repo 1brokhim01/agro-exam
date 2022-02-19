@@ -1,6 +1,7 @@
 # agro_exam
 
-Farm uchun ilova
+Farm uchun ilova 
+5 ta sahifadan iborat Screenshootlar:
 
 ## Getting Started
 <p>
