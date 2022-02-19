@@ -67,7 +67,7 @@ class _Login_screenState extends State<Login_screen> {
                       TextFormField(
                         controller: _emailController,
                         decoration: InputDecoration(
-                          hintText: ("909775909"),
+                          hintText: ("Enter your number"),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(25),
                           ),
